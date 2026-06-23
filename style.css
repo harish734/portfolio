@@ -21,10 +21,21 @@
     sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
   transition: 0.4s;
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+    scroll-margin-top: 100px;
 }
 
 header {
@@ -35,6 +46,7 @@ header {
   position: sticky;
   top: 0;
   background: var(--bg);
+  z-index: 1000;
 }
 
 .logo {
