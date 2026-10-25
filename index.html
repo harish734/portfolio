@@ -142,19 +142,28 @@
     <section id="contact" class="fade">
         <h2 class="section-title">Contact Me</h2>
 
-        <form class="contact-form">
 
-            <input type="text" placeholder="Your Name" required>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-            <input type="email" placeholder="Email" required>
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="23ae62eb-b0cf-4ff1-afb6-83fda6f54a57">
 
-            <textarea rows="5" placeholder="Message" required></textarea>
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="text" name="subject" placeholder="Subject" required>
+
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
 
             <button type="submit">
                 Send Message
             </button>
 
         </form>
+
+        <p id="form-status"></p>
+
 
         <div class="social">
 
